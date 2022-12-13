@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+.things {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
