@@ -1,23 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
-
-// Fonts
-$title-font: 'Fraunces', serif;
-$paragraph-font: 'Barlow', sans-serif;
-
-// Primary Colors
-$learn-more-yellow: hsl(51, 100%, 49%);
-$learn-more-red: hsl(7, 99%, 70%);
-$graphic-design-text: hsl(167, 40%, 24%);
-$photo-text: hsl(198, 62%, 26%);
-$footer-color: hsl(168, 34%, 41%);
-
-//Secondary Colors
-$dark-blue: hsl(212, 27%, 19%);
-$dark-grey: hsl(213, 9%, 39%);
-$dark-grayish-blue: hsl(232, 10%, 55%);
-$grayish-blue: hsl(210, 4%, 67%);
-$white: hsl(0, 0%, 100%);
+@import "variables.scss";
 
 * {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+li {
+    list-style: none;
+}
+li:hover {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+li a {
+    display: block;
+}
+}
+
+
