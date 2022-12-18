@@ -87,12 +87,59 @@ h1 {
     height: 25vh;   
 }
 
+.arrow {
+    height: 10%;
+    color: white;
+}
+
 .container {
     @include flexbox;
+    height: 50vh;
+
+    img {
+        height: 20rem;
+    }
+}
+
+.container-testimonials {
+    display: flex;
+
+    img {
+        display: flex;
+        align-items: center;
+    }
+
+    p{
+        font-family: $paragraph-font;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .name {
+        font-family: $title-font;
+    }
+}
+
+.person-testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
+.section6 {
+    display: flex;
+    
+    .section6-img {
+        height: 20rem;
+    }
+}
 
+.section7 {
+    background-color: hsl(168, 45%, 52%);
+    height: 20vh;
+}
 
 
 
