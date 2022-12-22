@@ -3,7 +3,9 @@
 * {
   box-sizing: border-box;
 }
-html { height: 100%; }
+html {
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -42,6 +44,14 @@ body {
   a {
     text-decoration: none;
     padding: 1rem;
+  }
+  .contact {
+      border-radius: 15px;
+      background-color: white;
+      border: white;
+      color: black;
+      opacity: 5px;
+      margin: 0;
   }
 
   li a {
@@ -95,7 +105,7 @@ h1 {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-
+  grid-template-rows: auto auto;
 
   img {
     width: 100%;
@@ -109,44 +119,71 @@ h1 {
 }
 
 #grid-item-paragraph {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
 
-    h2 {
-        font-family: $title-font;
-    }
+  h2 {
+    font-family: $title-font;
+  }
 
-    p {
-        font-family: $paragraph-font;
-        color: $dark-grey;
-    }
+  p {
+    font-family: $paragraph-font;
+    color: $dark-grey;
+  }
 }
 
-.container-pics {
-  display: grid;
-  grid-template-columns: auto auto;
+#grid-pic {
+  position: relative;
 
+  .pic-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 15px;
+    display: block;
+  }
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  h4 {
+    font-family: $title-font;
+    font-size: 17px;
+  }
+  p {
+    font-family: $paragraph-font;
+    font-size: 15px;
+    color: $dark-grey;
   }
 }
 
 .section5 {
-    padding: 10rem;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font-family: $title-font;
+  font-size: 2rem;
+  color: $dark-grey;
 }
 
 .container-testimonials {
   display: flex;
+  gap: 2rem;
+  padding: 3rem 0rem;
 
-  img {
+  .person-testimonial {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  #inline-testimonials {
+    display: block;
+  }
+  .person-img {
+    border-radius: 50%;
+    height: 5rem;
   }
 
   p {
@@ -160,28 +197,11 @@ h1 {
   }
 }
 
-.container-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.person-testimonial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.person-img {
-    border-radius: 50%;
-}
+/// Having problems here with picture 2 and three
 
 .section6 {
   display: grid;
   grid-template-columns: auto auto auto auto;
-
 
   .section6-img {
     width: 100%;
@@ -191,8 +211,42 @@ h1 {
 }
 
 .section7 {
-  background-color: hsl(168, 45%, 52%);
-  height: 20vh;
+  background-color: rgb(152, 218, 206);
+
+  h6 {
+    font-size: 23px;
+    text-align: center;
+    color: $dark-blue;
+    margin: 0;
+    padding-top: 2rem;
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: $paragraph-font;
+    color: $dark-blue;
+    padding: 4rem;
+
+    a {
+      text-decoration: none;
+      color: $dark-blue;
+      transition: 1s;
+    }
+
+    a:hover {
+      color: white;
+    }
+  }
+
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 @media (max-width: 400px) {
