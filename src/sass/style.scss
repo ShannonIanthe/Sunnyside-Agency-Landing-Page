@@ -170,7 +170,7 @@ h1 {
 .container-testimonials {
   display: flex;
   gap: 2rem;
-  padding: 3rem 0rem;
+  padding: 2rem 0rem;
 
   .person-testimonial {
     display: flex;
@@ -275,4 +275,15 @@ h1 {
   .navbar-links.active {
     display: flex;
   }
+
+  .grid-container {
+    grid-template-columns: auto;
+  }
+  .container-testimonials {
+    display: flex;
+    flex-direction: column;
+}
+.section6 {
+  grid-template-columns: auto auto;
+}
 }
