@@ -45,13 +45,24 @@ body {
     text-decoration: none;
     padding: 1rem;
   }
-  .contact {
-      border-radius: 15px;
-      background-color: white;
-      border: white;
-      color: black;
-      opacity: 5px;
-      margin: 0;
+  button {
+    border: none;
+    border-radius: 25px;
+    font-size: 12px;
+    font-family: $title-font;
+    background-color: white;
+    padding: 3px 10px;
+
+    a {
+      text-decoration: none;
+      color: $dark-blue;
+    }
+
+    button:hover {
+      background-color: $dark-blue;
+      opacity: 0.5;
+    }
+
   }
 
   li a {
@@ -140,7 +151,7 @@ h1 {
 
   .pic-info {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
     padding: 15px 15px;
     display: block;
@@ -216,7 +227,7 @@ h1 {
   h6 {
     font-size: 23px;
     text-align: center;
-    color: $dark-blue;
+    color: rgb(48, 117, 102);
     margin: 0;
     padding-top: 2rem;
   }
@@ -224,15 +235,16 @@ h1 {
   .footer-links {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5rem;
     font-family: $paragraph-font;
-    color: $dark-blue;
-    padding: 4rem;
+    padding: 3rem;
 
     a {
       text-decoration: none;
       color: $dark-blue;
       transition: 1s;
+      color: rgb(48, 117, 102);
     }
 
     a:hover {
@@ -244,8 +256,19 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    gap: .8rem;
     padding-bottom: 1.5rem;
+  }
+}
+
+.attribution {
+  font-family: $paragraph-font;
+  font-size: 13px;
+  color: $dark-grey;
+
+  a {
+    text-decoration: none;
+    color: $dark-blue;
   }
 }
 
