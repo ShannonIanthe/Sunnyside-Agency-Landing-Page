@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 1rem;
 }
 
 .brand-title {
@@ -41,9 +42,16 @@ body {
   li:hover {
     cursor: pointer;
   }
+
+  li a {
+    display: block;
+    color: $white;
+  }
+
   a {
     text-decoration: none;
-    padding: 1rem;
+    padding: .6rem;
+
   }
   button {
     border: none;
@@ -51,22 +59,24 @@ body {
     font-size: 12px;
     font-family: $title-font;
     background-color: white;
-    padding: 3px 10px;
 
     a {
       text-decoration: none;
       color: $dark-blue;
     }
+    a:hover {
+      color: $white;
 
-    button:hover {
-      background-color: $dark-blue;
-      opacity: 0.5;
     }
 
   }
+}
 
-  li a {
-    display: block;
+button:hover {
+  background-color: $white;
+  opacity: 0.2;
+  
+  a:hover {
     color: $white;
   }
 }
@@ -129,12 +139,14 @@ h1 {
   text-align: center;
 }
 
-#grid-item-paragraph {
+#grid-item-paragraph,
+#grid-item-paragraph-1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-start;
   justify-content: center;
   padding: 4rem;
+  text-align: left;
 
   h2 {
     font-family: $title-font;
@@ -175,23 +187,29 @@ h1 {
   text-align: center;
   font-family: $title-font;
   font-size: 2rem;
-  color: $dark-grey;
+
+  h5{
+    color: rgb(150, 150, 150);
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    padding-top: 3rem;
+  }
 }
 
 .container-testimonials {
   display: flex;
-  gap: 2rem;
-  padding: 2rem 0rem;
+  gap: 1.8rem;
+  padding: 3rem 0rem;
 
   .person-testimonial {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
+
   #inline-testimonials {
     display: block;
   }
+
   .person-img {
     border-radius: 50%;
     height: 5rem;
@@ -199,12 +217,18 @@ h1 {
 
   p {
     font-family: $paragraph-font;
+    color: $dark-grey;
     font-size: 12px;
     text-align: center;
   }
 
   .name {
+    display: inline-block;
     font-family: $title-font;
+    color: rgb(35, 35, 35);
+  }
+  .testimonial-name{
+    display: block;
   }
 }
 
