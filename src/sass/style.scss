@@ -56,29 +56,24 @@ body {
   button {
     border: none;
     border-radius: 25px;
-    font-size: 12px;
     font-family: $title-font;
     background-color: white;
+    transition: 1s;
 
     a {
       text-decoration: none;
       color: $dark-blue;
+      transition: 1s;
     }
-    a:hover {
-      color: $white;
-
-    }
-
   }
 }
 
-button:hover {
-  background-color: $white;
-  opacity: 0.2;
-  
-  a:hover {
-    color: $white;
-  }
+.contact-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+} 
+
+.contact:hover {
+  color: rgb(255, 255, 255);
 }
 
 .toggle-button {
@@ -135,7 +130,8 @@ h1 {
   }
 }
 
-.grid-item {
+.grid-item,
+.grid-item1 {
   text-align: center;
 }
 
@@ -157,6 +153,7 @@ h1 {
     color: $dark-grey;
   }
 }
+
 
 #grid-pic {
   position: relative;
@@ -270,9 +267,8 @@ h1 {
       transition: 1s;
       color: rgb(48, 117, 102);
     }
-
-    a:hover {
-      color: white;
+    a:hover{
+      color: whitesmoke;
     }
   }
 
@@ -282,8 +278,14 @@ h1 {
     justify-content: center;
     gap: .8rem;
     padding-bottom: 1.5rem;
+    cursor: pointer;
+  }
+ a:hover {
+   color: white;
+    fill: $white;
   }
 }
+
 
 .attribution {
   font-family: $paragraph-font;
@@ -297,6 +299,13 @@ h1 {
 }
 
 @media (max-width: 400px) {
+
+  main {
+    height: 90vh;
+    h1{
+      height: 10vh;
+    }
+  }
   .toggle-button {
     display: flex;
   }
@@ -307,16 +316,26 @@ h1 {
   }
   .navbar-links {
     display: none;
-    width: 100%;
+    margin: 0 auto; 
+    background-color: $white;
     ul {
+      text-align: center;
       width: 100%;
       flex-direction: column;
     }
     li {
       text-align: center;
     }
+    li a {
+      color: grey;
+    }
     a {
       padding: 0.5rem 1rem;
+    }
+    button {
+      background-color: yellow;
+      padding: .2rem;
+      margin: .3rem 5rem;
     }
   }
   .navbar-links.active {
@@ -326,6 +345,7 @@ h1 {
   .grid-container {
     grid-template-columns: auto;
   }
+
   .container-testimonials {
     display: flex;
     flex-direction: column;
